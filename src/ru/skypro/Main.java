@@ -35,7 +35,7 @@ public class Main {
         }
         System.out.println();
         for (int i = 0; i < 3; i++) {
-            if(array[i] / 2 != 0){
+            if (array[i] / 2 != 0) {
                 i++;
             }
             System.out.print(array[i]);
