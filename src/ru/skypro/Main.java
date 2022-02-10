@@ -58,7 +58,7 @@ public class Main {
             }
             System.out.println();
             for (int x = 0; x < 3; x++) {
-                if (array[x] / 2 != 0) {
+                if (array[x] / 2 == 0) {
                     array[x] += 1;
                 }
                 System.out.print(array[x]);
