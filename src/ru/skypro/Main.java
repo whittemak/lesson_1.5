@@ -10,37 +10,60 @@ public class Main {
         double[] fraction = {1.57, 7.654, 9.986};
         int[] random = {5, 7, 12, 20};
         System.out.println();
-        for (int i = 0; i < 3; i++) {
-            System.out.print(array[i] + ",");
-        }
-        System.out.println();
-        for (int i = 0; i < 3; i++) {
-            System.out.print(fraction[i] + ",");
-        }
-        System.out.println();
-        for (int i = 0; i < 4; i++) {
-            System.out.print(random[i] + ",");
-        }
-        System.out.println();
-        for (int i = 2; i >= 0; i--) {
-            System.out.print(array[i] + ",");
-        }
-        System.out.println();
-        for (int i = 2; i >= 0; i--) {
-            System.out.print(fraction[i] + ",");
-        }
-        System.out.println();
-        for (int i = 3; i >= 0; i--) {
-            System.out.print(random[i] + ",");
-        }
-        System.out.println();
-        for (int i = 0; i < 3; i++) {
-            if (array[i] / 2 != 0) {
-                i++;
+        for (int i = 0; i < array.length; i++) {
+            if (i == array.length - 1) {
+                System.out.print(array[i]);
+                break;
             }
-            System.out.print(array[i]);
+            System.out.print(array[i] + ",");
         }
-    }
+        System.out.println();
+        for (int i = 0; i < fraction.length; i++) {
+            if (i == fraction.length - 1) {
+                System.out.print(fraction[i]);
+                break;
+            }
+            System.out.print(fraction[i] + ",");
+        }
+        System.out.println();
+        for (int i = 0; i < random.length; i++) {
+            if (i == random.length - 1) {
+                System.out.print(random[i]);
+                break;
+            }
+            System.out.print(random[i] + ",");
+        }
+        System.out.println();
+        for (int i = array.length; i >= 0; i--) {
+            if (i == array.length - 1) {
+                System.out.print(array[i]);
+                break;
+            }
+            System.out.print(array[i] + ",");
+            System.out.println();
+            for (int y = fraction.length; y >= 0; y--) {
+                if (y == fraction.length - 1) {
+                    System.out.print(fraction[y]);
+                    break;
+                }
+                System.out.print(fraction[y] + ",");
+            }
+            System.out.println();
+            for (int z = random.length; z >= 0; z--) {
+                if (z == random.length - 1) {
+                    System.out.print(random[z]);
+                    break;
+                }
+                System.out.print(random[z] + ",");
+            }
+            System.out.println();
+            for (int x = 0; x < 3; x++) {
+                if (array[x] / 2 != 0) {
+                    array[x] += 1;
+                }
+                System.out.print(array[x]);
+            }
+        }
 
 
 }
